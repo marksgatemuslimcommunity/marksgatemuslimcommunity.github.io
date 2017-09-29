@@ -5,4 +5,83 @@ i {
   font-size: 1.5em !important; }
 
 footer {
-  padding: 2rem 1.5rem 2rem !important; }
+  padding: 2rem 1.5rem 2rem !important;
+}
+
+footer, .header-color {
+  background-color: #cbdded!important;
+}
+
+.header-align {
+  text-align: right;
+}
+
+#madrasah-submenu {
+  display: none;
+}
+
+#news-slideshow {
+  height: 600px;
+}
+
+.timeline-point-right, .timeline-point-left {
+  height: 100px;
+}
+
+.timeline-point-right {
+  text-align: right;
+}
+
+.timeline-point-left {
+  text-align: left;
+}
+
+.border-right {
+  border-right: 1px solid #aaa
+}
+
+.header-color {
+  margin-bottom: 0!important;
+  padding-bottom: 0;
+}
+
+.header {
+  padding-bottom: 0;
+}
+
+.title {
+  margin-bottom: 1.5rem!important;
+}
+
+.header-padding {
+  padding-right: 0;
+  padding-top: 0;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+.main-content__padding {
+  padding-right: 1.25rem;
+  margin-bottom: 0!important;
+}
+
+.first-column-size {
+  width: 61%!important;
+}
+
+td:nth-child(odd) {
+  background-color: #aaaaaa;
+}
+
+td {
+  padding: 0.1rem!important;
+}
+
+/*body {*/
+  /*background: url('../image/tile.png') repeat-x #55acee;*/
+/*}*/
+
+.main-page__shadow {
+  box-shadow: 1px 1px 30px 4px #aaa;
+}

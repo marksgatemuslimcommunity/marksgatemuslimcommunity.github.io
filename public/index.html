@@ -11,23 +11,23 @@
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
     <script src="js/moment-with-locales.js"></script>
+    <link rel="stylesheet" href="css/my-slider.css"/>
+    <script src="js/ism-2.2.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="notification">
+    <div class="container main-page__shadow">
+        <div class="notification header-color header-padding">
             <section class="hero">
-                <div class="hero-body">
-                    <div class="container">
+                <div class="hero-body header-align header header-padding">
                         <h1 class="title">
-                            Marks Gate Muslim Community
+                            <img src="image/MGMC.png" draggable="false"/>
                         </h1>
                         <h2 class="subtitle">
                         </h2>
-                    </div>
                 </div>
             </section>
         </div>
-        <div class="notification">
+        <div class="notification main-content__padding">
             <div class="columns">
                 <div class="column is-one-quarter">
                     <aside class="menu">
@@ -36,7 +36,12 @@
                             <li><a href="about-us.html">About Us</a></li>
                             <li><a href="news-and-events.html">News & Events</a></li>
                             <li><a href="project-and-service.html">Project & Service</a></li>
-                            <li><a href="madrasha-education.html">Madrasah Education</a></li>
+                            <li><a href="javascript:void(0)" id="madrasah-link">Madrasah Education</a>
+                                <ul id="madrasah-submenu">
+                                    <li><a href="about-madrasah.html">About</a></li>
+                                    <li><a href="madrasah-education.html">Information</a></li>
+                                </ul>
+                            </li>
                             <li><a>Contacts</a></li>
                         </ul>
                         <p class="menu-label">
@@ -68,21 +73,41 @@
                 </div>
                 <div class="column">
                     <div class="columns">
-                        <div class="column">
-                            <p><strong>Current and special affairs</strong></p>
+                        <div class="column is-two-thirds">
+                            <div class="ism-slider" id="slideshow">
+                                <ol>
+                                    <li>
+                                        <img src="image/mecca.jpg">
+                                    </li>
+                                    <li>
+                                        <!--<img src="image/slides/beautiful-701678_1280.jpg">-->
+                                        <!--<div class="ism-caption ism-caption-0">My slide caption text</div>-->
+                                    </li>
+                                    <li>
+                                        <!--<img src="image/slides/summer-192179_1280.jpg">-->
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
                         <div class="column">
                             <p><strong>Prayer timetables:</strong></p>
+                            <div id="prayer-times"></div>
+                            <div id="prayer-calendar"></div>
+                            <p><a href="http://www.eastlondonmosque.org.uk/sites/default/files/documents/ELM_prayer_timetable_2016.pdf" target="_blank">Full prayer calendar timetable</a></p>
+                            <br />
+                            <p><strong>Calendar</strong></p>
+                            <div id="islamic-calendar"></div>
+                            <p><a href="http://www.islamicfinder.org/Hcal/hdate_year.php?year=1437&base=h" target="_blank">Full calendar</a></p>
                         </div>
                     </div>
-                    <div class="columns">
+                    <!--<div class="columns">
                         <div class="column">
                             <p><strong>Youtube uploads</strong></p>
                         </div>
                         <div class="column">
                             <p><strong>Community uploads</strong></p>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -100,16 +125,16 @@
                     </ul>
                 </div>
                 <div class="column is-one-quarter">
-                    Follow us:
-                        <i class="fa fa-facebook" style="color: #3b5998"></i>
-                        <i class="fa fa-twitter" style="color: #55acee"></i>
-                        <i class="fa fa-youtube" style="color: #ff0000"></i>
+                    <!--Follow us:-->
+                        <!--<i class="fa fa-facebook" style="color: #3b5998"></i>-->
+                        <!--<i class="fa fa-twitter" style="color: #55acee"></i>-->
+                        <!--<i class="fa fa-youtube" style="color: #ff0000"></i>-->
                 </div>
             </div>
             <div class="columns">
                 <div class="column">
                     <p>117 Rose Lane, Romford RM6 5NR, UK</p>
-                    <p>© Charity Registration number: (not available yet)</p>
+                    <p>© Charity Registration number: 1174585</p>
                 </div>
                 <div class="column is-one-quarter">
                     Contact: 0780-445-5894 / 0787-985-4431

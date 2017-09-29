@@ -22,7 +22,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('livereload', function() {
-    gulp.src('./public/**/*')
+    return gulp.src('./public/**/*')
     .pipe(connect.reload());
 });
 
