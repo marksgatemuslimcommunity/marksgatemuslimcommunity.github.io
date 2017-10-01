@@ -5,7 +5,6 @@ $(document).ready(function () {
     setHijriDay();
     setPrayerTimes();
     setMadrasahSubmenu();
-    setCalendar();
 });
 
 function getCurrentTime() {
@@ -34,14 +33,15 @@ function setPrayerTimes() {
         var timings = response['data']['timings'];
 
         $('#prayer-times').html(
-            '<table class="table is-narrow">' +
+            '<table class="table is-narrow is-striped">' +
             '<tr>' +
             '<td>Fajr</td><td>Sunrise</td><td>Dhuhr</td><td>Asr</td><td>Maghrib</td><td>Isha</td>' +
             '</tr>' +
             '<tr>' +
             '<td>' + timings['Fajr'] +'</td>' + '<td>' + timings['Sunrise'] +'</td>' + '<td>' + timings['Dhuhr'] +'</td>' + '<td>' + timings['Asr'] +'</td>' +
             '<td>' + timings['Maghrib'] +'</td>' + '<td>' + timings['Isha'] +'</td>' +
-            '</tr>'
+            '</tr>' +
+            '</table>'
         );
 
     })
@@ -61,40 +61,10 @@ function toggleSubmenu(elem) {
     }
 }
 
-function setCalendar() {
-    var calendarUrl = 'http://api.aladhan.com/gToHCalendar/9/2017';
-    var months = ['Sun', 'Mon', 'Tue', 'Thu', 'Fri', 'Sat'];
-    var monthsHtml = '';
-    var startIndex = 0;
-    var firstWeek = '';
+function setPopup() {
+  $('.modal').addClass('is-active');
+}
 
-    $.getJSON(calendarUrl, function (response) {
-        var allDays = response.data;
-
-        for (var i = 0; i < allDays.length; i++) {
-            var day = allDays[i]['gregorian']['weekday']['en'];
-
-            if (i === 0) {
-                startIndex = months.indexOf(day.slice(0, 3));
-            }
-        }
-    });
-
-    for (var m = 0; m < months.length; m++) {
-        monthsHtml += '<td>' +  months[m] + '</td>';
-        if (m === startIndex) {
-            firstWeek += '<td>' + months[startIndex] + '</td>'
-        } else if (m < startIndex) {
-            firstWeek += '<td></td>';
-        }
-    }
-
-    $('#islamic-calendar').html(
-        /*'<table class="table is-narrow">' +
-        '<tr>' + monthsHtml +
-        '</tr>' +
-        '<tr>' +
-        '</tr>' +
-        '</table>'*/
-    )
+function removePopup() {
+  $('.modal').removeClass('is-active');
 }
