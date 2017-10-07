@@ -34,7 +34,12 @@
                 <aside class="menu">
                     <ul class="menu-list">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html" class="is-active">About Us</a></li>
+                        <li><a href="javascript:void(0)" id="aboutus-link" class="is-active">About Us</a>
+                            <ul id="aboutus-submenu">
+                                <li><a href="about-us.html" class="is-active">Mission & Vision</a></li>
+                                <li><a href="management-team.html">Management Team</a></li>
+                            </ul>
+                        </li>
                         <li><a href="news-and-events.html">News & Events</a></li>
                         <li><a href="project-and-service.html">Project & Service</a></li>
                         <li><a href="javascript:void(0)" id="madrasah-link">Madrasah Education</a>
@@ -77,14 +82,65 @@
             <div class="column">
                 <p><strong class="title">About us</strong></p>
                 <p>
-                    <strong class="sub-heading subtitle">Mission & Vision</strong><br />
-                    Our mission is to Serve, Educate and Unite.<br />
+                    <strong class="sub-heading subtitle">Mission & Vision</strong><br/>
+                    Our mission is to Serve, Educate and Unite.<br/>
                     Our vision is to see a world of Allah (SWT) consciousness respect, dignity and justice.
                 </p>
-                <br />
+                <br/>
                 <p><strong class="sub-heading subtitle">Our Values</strong></p>
-                <p>We are people who will always strive to:<br />
+                <p>We are people who will always strive to:<br/>
                 </p>
+                <ul class="about-us__ul">
+                    <li>Live by the teachings of Al- Quran and the sayings & actions of “Messengers” (PBUH)</li>
+                    <li>Demonstrate generosity, integrity, truthfulness, forgiveness, humility & modesty</li>
+                    <li>Treat each other and all humanity with respect, fairness and justice</li>
+                    <li>Continually acquire knowledge, learn, implement and improve ourselves; also encourage & help
+                        others to do the same
+                    </li>
+                    <li>Take responsibility, work as a team, build relationships and partnerships based on doing the
+                        right thing for the community as a whole
+                    </li>
+                    <li>Have energy, enthusiasm, and the courage to lead the community in precise direction</li>
+                    <li>Be honest & accountable to each other; continually remember death, and fearing final
+                        accountability to Allah (SW).
+                    </li>
+                </ul>
+                <br/>
+                <p><strong class="sub-heading subtitle">Our Purpose are to:</strong></p>
+                <ul class="about-us__ul">
+                    <li>Focus on the benefit of the “Marks Gate Muslim community” prayer meetings, religious festivals
+                        celebration; whilst ensuring services are open to enlighten Muslims and non-Muslims with the
+                        opportunity to learn and understand Islam, through dialogue, discussion and social interaction
+                    </li>
+                    <li>Meet the needs of the local community by the provision of supplementary education for children,
+                        young and adult
+                    </li>
+                    <li>Contribute to the social, cultural, spiritual and economic enhancement of the whole community,
+                        through policy and strategic development and service.
+                    </li>
+                </ul>
+                <br />
+                <p><strong class="sub-heading subtitle">MGMC for Serving the Community, working together:</strong></p>
+                <p>The “Marks Gate Muslim Community” (MGMC) started its journey in 2013, by some local Muslim brother’s,
+                for youth and adult to be actively engaging in faith, unity and worship. It is our belief that our
+                primary concern should be to serve the needs of the local community and to work towards the common good.
+                In recent years there has been noticeable improvement in Marks Gate in education, religious festivals
+                and community cohesion. We are hoping a coming together of distinguished Muslims and non-Muslims to
+                    create Marks Gate’s first mosque in near future.</p>
+                <br />
+                <p><strong class="sub-heading subtitle">Opposing Extremism and Promoting Tolerance:</strong></p>
+                <p>The Marks Gate Muslim Community works actively to promote tolerance and understanding. Our Imams,
+                community committee and workers encourage constructive engagement in society and rejection of extremism
+                in all its forms. We advise worshipers to ensure they are registered to vote and take a part in local
+                    and national elections.</p>
+
+                <br />
+                <p><strong class="sub-heading subtitle">Youth and Woman: Encouraging Participation</strong></p>
+                <p>We are engaging youth in programmes of learning and recreating, dealing with issues of anti-social
+                behaviour, hate crime, drugs, extremism and gang culture. Facilities are provided to allow woman to
+                access relevant services in a culturally sensitive environment, including counselling service, special
+                    events and social support.</p>
+                <br />
             </div>
         </div>
     </div>
@@ -153,5 +209,8 @@
 <script src="js/calendar.js"></script>
 <script src="js/hijri-date.js"></script>
 <script src="js/calendar-widget.js" type="text/javascript"></script>
+<script>
+    $('#aboutus-submenu').css('display', 'block')
+</script>
 </body>
 </html>

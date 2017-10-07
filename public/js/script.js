@@ -50,6 +50,10 @@ function setPrayerTimes() {
 function setMadrasahSubmenu() {
     $('#madrasah-link').click(function () {
         toggleSubmenu('#madrasah-submenu');
+    });
+
+    $('#aboutus-link').click(function () {
+        toggleSubmenu('#aboutus-submenu');
     })
 }
 

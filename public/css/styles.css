@@ -39,7 +39,7 @@ li i {
 i {
   font-size: 1.5em !important; }
 
-#madrasah-submenu {
+#madrasah-submenu, #aboutus-submenu {
   display: none;
 }
 
@@ -94,4 +94,13 @@ footer {
 /* ABOUT US */
 .sub-heading {
   color: #009d9d!important;
+}
+
+.about-us__ul {
+  padding-left: 2rem;
+  list-style: circle;
+}
+
+.media-left {
+  margin-top: 0.5rem!important;
 }
