@@ -11,21 +11,24 @@
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
     <script src="js/moment-with-locales.js"></script>
+    <link rel="stylesheet" href="css/my-slider.css"/>
+    <link rel="stylesheet" href="css/calendar.css"/>
+    <script src="js/ism-2.2.min.js"></script>
 </head>
 <body>
-<div class="container">
-    <div class="notification">
+<div class="container main-page">
+    <div class="notification main-page__header">
         <section class="hero">
-            <div class="hero-body header-align">
+            <div class="hero-body">
                 <h1 class="title">
-                    Marks Gate Muslim Community
+                    <img src="image/MGMC.png" draggable="false"/>
                 </h1>
-                <h2 class="subtitle">
+                <h2 class="subtitle" id="date-header">
                 </h2>
             </div>
         </section>
     </div>
-    <div class="notification">
+    <div class="notification main-content__body">
         <div class="columns">
             <div class="column is-one-quarter">
                 <aside class="menu">
@@ -40,7 +43,7 @@
                                 <li><a href="madrasah-education.html">Information</a></li>
                             </ul>
                         </li>
-                        <li><a>Contacts</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
                     </ul>
                     <p class="menu-label">
                         Donation
@@ -62,7 +65,9 @@
                         </li>
                     </ul>
                     <p class="menu-label">
-                        Other
+                        Other<br/><br/>
+                        <a href="javascript:void(0)" onclick="setPopup()"><img src="image/car.png"/></a>
+                        <br/>
                     </p>
                     <ul class="menu-list">
 
@@ -70,25 +75,16 @@
                 </aside>
             </div>
             <div class="column">
-                <div class="columns">
-                    <div class="column">
-                        <p><strong>About us</strong></p>
-                        <p>
-                            Marks Gate Muslim Community was established in 2013, by some local brothers. Initially it was Jummah for the growing Muslim community and then other services were added to cater for the needs and demands of the community.
-                            We currently organise Jummah, Tarawih, Eid Salah, Children's madrasah, and other community events.
-                            We have an interim committee made up of 10 volunteers who live locally and organise the Islamic activities.
-                        </p>
-                        <br />
-                        <p>
-                            Regular meetings take place where we discuss matters and organise our activities.
-                        </p>
-                        <br />
-                        <p>
-                            We are a growing Muslim community and welcome contributions (financial and volunteers).
-                        </p>
-
-                    </div>
-                </div>
+                <p><strong class="title">About us</strong></p>
+                <p>
+                    <strong class="sub-heading subtitle">Mission & Vision</strong><br />
+                    Our mission is to Serve, Educate and Unite.<br />
+                    Our vision is to see a world of Allah (SWT) consciousness respect, dignity and justice.
+                </p>
+                <br />
+                <p><strong class="sub-heading subtitle">Our Values</strong></p>
+                <p>We are people who will always strive to:<br />
+                </p>
             </div>
         </div>
     </div>
@@ -106,23 +102,56 @@
                 </ul>
             </div>
             <div class="column is-one-quarter">
-                <!--Follow us:-->
-                <!--<i class="fa fa-facebook" style="color: #3b5998"></i>-->
-                <!--<i class="fa fa-twitter" style="color: #55acee"></i>-->
-                <!--<i class="fa fa-youtube" style="color: #ff0000"></i>-->
+                <strong>Follow us:</strong><br/>
+                <table>
+                    <tr>
+                        <td>Facebook</td>
+                        <td><i class="fa fa-facebook" style="color: #3b5998"></i></td>
+
+                    </tr>
+                    <tr>
+                        <td>Twitter</td>
+                        <td><i class="fa fa-twitter" style="color: #55acee"></i></td>
+
+                    </tr>
+                    <tr>
+                        <td>Youtube</td>
+                        <td><i class="fa fa-youtube" style="color: #ff0000"></i></td>
+                    </tr>
+                </table>
             </div>
         </div>
+    </footer>
+    <div class="copyright">
         <div class="columns">
             <div class="column">
                 <p>117 Rose Lane, Romford RM6 5NR, UK</p>
-                <p>© Charity Registration number: (not available yet)</p>
+                <p>© Charity Registration number: 1174585</p>
             </div>
             <div class="column is-one-quarter">
                 Contact: 0780-445-5894 / 0787-985-4431
             </div>
         </div>
-    </footer>
+    </div>
+</div>
+<div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Contact details</p>
+            <button class="delete" aria-label="close" onclick="removePopup()"></button>
+        </header>
+        <section class="modal-card-body">
+            Please contact us on: <br/>
+            Tareq - 0787-985-4431
+            <br/><br/>
+            <button class="button" onclick="removePopup()">Close</button>
+        </section>
+    </div>
 </div>
 <script src="js/script.js" type="text/javascript"></script>
+<script src="js/calendar.js"></script>
+<script src="js/hijri-date.js"></script>
+<script src="js/calendar-widget.js" type="text/javascript"></script>
 </body>
 </html>

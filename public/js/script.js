@@ -10,7 +10,7 @@ $(document).ready(function () {
 function getCurrentTime() {
     var currentTime = moment().format('MMMM Do YYYY');
 
-    $('.subtitle').html(currentTime)
+    $('#date-header').html(currentTime)
 }
 
 function setHijriDay() {
@@ -23,7 +23,7 @@ function setHijriDay() {
         var hijriMonth = response['data']['hijri']['month']['en'];
         var hijriYear = response['data']['hijri']['year'];
 
-        $('.subtitle').html(currentTime + ' • ' + hijriDay + ' ' + hijriMonth + ' ' + hijriYear)
+        $('#date-header').html(currentTime + ' • ' + hijriDay + ' ' + hijriMonth + ' ' + hijriYear)
     });
 }
 
