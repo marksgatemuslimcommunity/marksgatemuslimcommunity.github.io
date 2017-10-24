@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marks Gate Muslim Community</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="js/moment-with-locales.js"></script>
+    <link rel="stylesheet" href="css/my-slider.css"/>
+    <link rel="stylesheet" href="css/calendar.css"/>
+    <script src="js/ism-2.2.min.js"></script>
+</head>
+<body>
+<div class="container main-page">
+    <div class="notification main-page__header">
+        <section class="hero">
+            <div class="hero-body">
+                <h1 class="title">
+                    <img src="image/MGMC.png" draggable="false"/>
+                </h1>
+                <h2 class="subtitle">
+                </h2>
+            </div>
+        </section>
+    </div>
+    <div class="notification main-content__body">
+        <div class="columns">
+            <div class="column is-one-quarter">
+                <aside class="menu">
+                    <ul class="menu-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="javascript:void(0)" id="aboutus-link">About Us</a>
+                            <ul id="aboutus-submenu">
+                                <li><a href="about-us.html">Mission & Vision</a></li>
+                                <li><a href="management-team.html">Management Team</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="news-and-events.html" class="is-active">News & Events</a></li>
+                        <li><a href="project-and-service.html">Project & Service</a></li>
+                        <li><a href="javascript:void(0)" id="madrasah-link">Madrasah Education</a>
+                            <ul id="madrasah-submenu">
+                                <li><a href="about-madrasah.html">About</a></li>
+                                <li><a href="madrasah-education.html">Information</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contacts</a></li>
+                    </ul>
+                    <p class="menu-label">
+                        Donation
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <ul>
+                                <li>Mark Gate Muslim Community</li>
+                                <li>Account No: 14690357</li>
+                                <li>Sort Code: 60-05-01</li>
+                                <li>Natwest</li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-cc-visa" aria-hidden="true" style="color: #1a1f71"></i>
+                                    <i class="fa fa-cc-mastercard" aria-hidden="true" style="color: #cc0000"></i>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="menu-label">
+                        Other<br/><br/>
+                        <a href="javascript:void(0)" onclick="setPopup()"><img src="image/car.png"/></a>
+                        <br/>
+                    </p>
+                    <ul class="menu-list">
+
+                    </ul>
+                </aside>
+            </div>
+            <div class="column">
+                <p><strong class="sub-heading subtitle">News and events</strong></p>
+
+                <p>Friday (Jummah) prayer timetable:</p>
+                <br/>
+                <ul>
+                    <li>Islamic Lecture (Bayaan) at – 12:45pm</li>
+                    <li>Khutbah – 1:20pm</li>
+                    <li>Prayer (Jamaat) Starts- 1:30pm</li>
+                </ul>
+                <br/>
+                <strong>More news - Coming soon!</strong>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="columns">
+            <div class="column">
+                <ul>
+                    <li><a href="javascript:void(0)" onclick="setPopup('#modal-two')"> Privacy Policy</a></li>
+                    <li><a href="javascript:void(0)" onclick="setPopup('#modal-three')">Terms & Conditions</a></li>
+                    <li><a href="vacanies.html">Vacancies</a></li>
+                    <li><a href="community-bulletin.html">Community Bulletin</a></li>
+                    <li><a href="contact.html">Comments and Feedback</a></li>
+                </ul>
+            </div>
+            <div class="column is-one-quarter">
+                <strong>Follow us:</strong><br/>
+                <table>
+                    <tr>
+                        <td><a href="https://www.facebook.com/Marks-Gate-Muslim-Community-356683584780478">Facebook</a></td>
+                        <td><i class="fa fa-facebook" style="color: #3b5998"></i></td>
+
+                    </tr>
+                    <tr>
+                        <td>Twitter</td>
+                        <td><i class="fa fa-twitter" style="color: #55acee"></i></td>
+
+                    </tr>
+                    <tr>
+                        <td>Youtube</td>
+                        <td><i class="fa fa-youtube" style="color: #ff0000"></i></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="columns">
+            <div class="column">
+                <p>117 Rose Lane, Romford RM6 5NR, UK</p>
+                <p>© Charity Registration number: 1174585</p>
+            </div>
+            <div class="column is-one-quarter">
+                Contact: 0780-445-5894 / 0787-985-4431
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Contact details</p>
+            <button class="delete" aria-label="close" onclick="removePopup()"></button>
+        </header>
+        <section class="modal-card-body">
+            Please contact us on: <br/>
+            Tareq - 0787-985-4431
+            <br/><br/>
+            <button class="button" onclick="removePopup()">Close</button>
+        </section>
+    </div>
+</div>
+<script src="js/script.js" type="text/javascript"></script>
+<script src="js/calendar.js"></script>
+<script src="js/hijri-date.js"></script>
+<script src="js/calendar-widget.js" type="text/javascript"></script>
+</body>
+</html>
