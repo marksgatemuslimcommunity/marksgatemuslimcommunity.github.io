@@ -34,7 +34,12 @@
                 <aside class="menu">
                     <ul class="menu-list">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="javascript:void(0)" id="aboutus-link">About Us</a>
+                            <ul id="aboutus-submenu">
+                                <li><a href="about-us.html">Mission & Vision</a></li>
+                                <li><a href="management-team.html">Management Team</a></li>
+                            </ul>
+                        </li>
                         <li><a href="news-and-events.html" class="is-active">News & Events</a></li>
                         <li><a href="project-and-service.html">Project & Service</a></li>
                         <li><a href="javascript:void(0)" id="madrasah-link">Madrasah Education</a>
@@ -75,7 +80,8 @@
                 </aside>
             </div>
             <div class="column">
-                <p><strong>News and events</strong></p>
+                <p><strong class="sub-heading subtitle">News and events</strong></p>
+
                 <p>Friday (Jummah) prayer timetable:</p>
                 <br/>
                 <ul>
@@ -93,19 +99,18 @@
         <div class="columns">
             <div class="column">
                 <ul>
-                    <li>Privacy Policy</li>
-                    <li>Terms & Conditions</li>
-                    <li>Advertisement info</li>
-                    <li>Vacancies</li>
-                    <li>Community Bulletin</li>
-                    <li>Comments and Feedback</li>
+                    <li><a href="javascript:void(0)" onclick="setPopup('#modal-two')"> Privacy Policy</a></li>
+                    <li><a href="javascript:void(0)" onclick="setPopup('#modal-three')">Terms & Conditions</a></li>
+                    <li><a href="vacanies.html">Vacancies</a></li>
+                    <li><a href="community-bulletin.html">Community Bulletin</a></li>
+                    <li><a href="contact.html">Comments and Feedback</a></li>
                 </ul>
             </div>
             <div class="column is-one-quarter">
                 <strong>Follow us:</strong><br/>
                 <table>
                     <tr>
-                        <td>Facebook</td>
+                        <td><a href="https://www.facebook.com/Marks-Gate-Muslim-Community-356683584780478">Facebook</a></td>
                         <td><i class="fa fa-facebook" style="color: #3b5998"></i></td>
 
                     </tr>

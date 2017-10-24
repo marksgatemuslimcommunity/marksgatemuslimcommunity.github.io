@@ -21,7 +21,7 @@ footer, .main-page__header {
 
 .hero-body {
   padding-top: 0!important;
-  padding-right: 0!important;
+  /*padding-right: 0!important;*/
   text-align: right;
   padding-bottom: 0;
 }
@@ -54,7 +54,7 @@ td {
 
 /* PRAYER CALENDAR */
 #cal-1 {
-  padding-bottom: 2.3rem;
+  padding-bottom: 1rem;
 }
 
 /* PROJECTS & SERVICES PAGE - TIMELINE STYLING */
@@ -89,6 +89,7 @@ footer {
   border-top: 1px solid #aaa;
   background-color: #87c4f9;
   padding: 0.5rem;
+  font-size: 0.8rem;
 }
 
 /* ABOUT US */
@@ -103,4 +104,71 @@ footer {
 
 .media-left {
   margin-top: 0.5rem!important;
+}
+
+
+/*TODO: Tidy up*/
+.prayer-times td {
+  text-align: center;
+  font-weight: bold;
+}
+
+.prayer-times tr:first-child td{
+  background-color: #259;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.side-bar-title {
+  color: #368b5b
+}
+
+.donation-button {
+  width: 100%;
+  font-weight: bold;
+  padding: unset!important;
+  margin: unset!important;
+  background: #6d1c30!important;
+}
+
+.donation-button div{
+  border: 2px solid #fff;
+  width: 50%;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+
+.donate-now-button {
+  margin-right: 10rem;
+}
+
+li a.is-active {
+  background-color: #205a33!important;
+  color: #fff!important;
+}
+
+a {
+  text-decoration: none!important;
+  font-weight: bold;
+  color: #215b34!important;
+}
+
+.donation-spacing {
+  margin-left: 0.8rem;
+}
+
+.donation-inline {
+  display: inline
+}
+
+.donation-inline img:nth-child(3) {
+  padding-bottom: 1rem;
+}
+
+.donation-right {
+  width: 92%;
+  background-color: #6d1c30!important;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
 }

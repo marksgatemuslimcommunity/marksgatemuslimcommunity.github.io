@@ -20,9 +20,7 @@
     <div class="notification main-page__header">
         <section class="hero">
             <div class="hero-body">
-
                 <h1 class="title">
-                    <!--<button class="button donate-now-button">DONDATE NOW</button>-->
                     <img src="image/MGMC.png" draggable="false"/>
                 </h1>
                 <h2 class="subtitle" id="date-header">
@@ -35,7 +33,7 @@
             <div class="column is-one-quarter">
                 <aside class="menu">
                     <ul class="menu-list">
-                        <li><a class="is-active">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="javascript:void(0)" id="aboutus-link">About Us</a>
                             <ul id="aboutus-submenu">
                                 <li><a href="about-us.html">Mission & Vision</a></li>
@@ -46,54 +44,34 @@
                         <li><a href="project-and-service.html">Project & Service</a></li>
                         <li><a href="javascript:void(0)" id="madrasah-link">Madrasah Education</a>
                             <ul id="madrasah-submenu">
-                                <!--Why MGMC Academy?
-                                News & Events
-                                Academy curriculum
-                                Fees & Funding
-                                Apply to MGMC Academy
-                                MGMC Academy Islamic Library
-                                Community Visit-->
                                 <li><a href="about-madrasah.html">About</a></li>
                                 <li><a href="madrasah-education.html">Information</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.html">Contacts</a></li>
-                    </ul>
-                    <button class="button donation-button is-primary">
-                        <div>
-                            DONATE NOW
-                        </div>
-                    </button>
-                    <!--<p class="menu-label">
-                        Donation
-                    </p>-->
-                    <ul class="menu-list">
-                        <br/>
-                        <p class="donation-spacing">
-                            Mark Gate Muslim Community<br/>
-                            Account No: 14690357<br/>
-                            Sort Code: 60-05-01<br/>
-                            Natwest<br/>
-                            <br/>
-                        <div class="donation-inline">
-                            <img src="image/mastercard.png">
-                            <img src="image/visa.png">
-                            <img src="image/standing-order-icon.png">
-                        </div>
-
-                        <!--<i class="fa fa-cc-visa" aria-hidden="true" style="color: #1a1f71"></i>-->
-                        <!--<i class="fa fa-cc-mastercard" aria-hidden="true" style="color: #cc0000"></i>-->
-                        </p>
-
-
+                        <li><a>Contacts</a></li>
                     </ul>
                     <p class="menu-label">
-
-                        <a href="javascript:void(0)" onclick="setPopup('#modal-one')"><img src="image/car.png"/></a>
-                        <br/>
-                        <a href="javascript:void(0)" onclick="setPopup('#modal-one')">
-                            <img src="image/more-info.png"/>
-                        </a>
+                        Donation
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <ul>
+                                <li>Mark Gate Muslim Community</li>
+                                <li>Account No: 14690357</li>
+                                <li>Sort Code: 60-05-01</li>
+                                <li>Natwest</li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-cc-visa" aria-hidden="true" style="color: #1a1f71"></i>
+                                    <i class="fa fa-cc-mastercard" aria-hidden="true" style="color: #cc0000"></i>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="menu-label">
+                        Other<br/><br/>
+                        <a href="javascript:void(0)" onclick="setPopup()"><img src="image/car.png"/></a>
                         <br/>
                     </p>
                     <ul class="menu-list">
@@ -102,92 +80,8 @@
                 </aside>
             </div>
             <div class="column">
-                <div class="columns">
-                    <div class="column is-two-thirds">
-                        <div class="ism-slider" id="slideshow">
-                            <ol>
-                                <li>
-                                    <img src="image/masjid.png">
-                                </li>
-                                <li>
-                                    <img src="image/masjid-plan.png">
-                                    <!--<div class="ism-caption ism-caption-0">My slide caption text</div>-->
-                                </li>
-                                <li>
-                                    <img src="image/donate.png">
-                                </li>
-                                <li>
-                                    <img src="image/madrasah.png">
-                                </li>
-                                <li>
-                                    <img src="image/volunteer.png">
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <button class="button is-primary donation-right">TODAY'S PRAYER TIMETABLE</button>
-                        <!--<p class="side-bar-title"><strong>Today's prayer timetable:</strong></p>-->
-                        <div id="prayer-times"></div>
-                        <p class="side-bar-title"><strong>Gregorian calendar</strong></p>
-                        <div id="cal-1">
-                        </div>
-                        <p class="side-bar-title"><strong>Islamic/Hijri calendar</strong></p>
-                        <div id="cal-2">
-                        </div>
-                    </div>
-                </div>
-                <div class="columns">
-                    <div class="column is-two-thirds">
-                        <h3 class="sub-heading subtitle">Current Affairs and Events</h3>
-                        <article class="media">
-                            <div class="media-left">
-                                <figure class="image is-64x64">
-                                    <img src="http://bulma.io/images/placeholders/128x128.png" alt="Image">
-                                </figure>
-                            </div>
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>
-                                        <strong>Example title</strong> <small style="float: right">23/10/2017</small>
-                                        <br>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-
-                    </div>
-                    <div class="column">
-                        Madrasah logo
-                    </div>
-                </div>
-                <div class="columns">
-                    <div class="column is-two-thirds" style="display: inline-flex">
-                        <div class="columns">
-                            <div class="column">
-                                <iframe width="100%" height="230"
-                                        src="https://youtube.com/embed/VO22l6-Qkys" style="float: left">
-                                </iframe>
-                            </div>
-                            <div class="column">
-                                <iframe width="100%" height="230"
-                                        src="https://youtube.com/embed/W45DrRGECQE" style="float: right">
-                                </iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <a href="javascript:void(0)" onclick="setPopup('#modal-one')">
-                            <img src="image/more-info.png"/>
-                        </a>
-                        <!--<img src="image/rent.png" />-->
-                    </div>
-                </div>
+                <p><strong class="title">Vacancies</strong> </p>
+                <p>Stayed tuned for new roles!</p>
             </div>
         </div>
     </div>
@@ -204,12 +98,10 @@
                 </ul>
             </div>
             <div class="column is-one-quarter">
-                <!--create search functionality -->
                 <strong>Follow us:</strong><br/>
                 <table>
-
                     <tr>
-                        <td><a href="https://www.facebook.com/Marks-Gate-Muslim-Community-356683584780478">Facebook</a></td>
+                        <td>Facebook</td>
                         <td><i class="fa fa-facebook" style="color: #3b5998"></i></td>
 
                     </tr>
@@ -229,13 +121,11 @@
     <div class="copyright">
         <div class="columns">
             <div class="column">
-                <p>Registered office: Rose Lane, Romford RM6 5NR, UK</p>
-                <p>© Marks Gate Muslim Community. All rights reserved. Charity Registration number: 1174585</p>
-                <p>ADVERTISEMENTS: The views of advertisers on this website may not necessarily represent the views of
-                    MGMC.</p>
+                <p>117 Rose Lane, Romford RM6 5NR, UK</p>
+                <p>© Charity Registration number: 1174585</p>
             </div>
             <div class="column is-one-quarter">
-                Contact: 0787 985 4431
+                Contact: 0780-445-5894 / 0787-985-4431
             </div>
         </div>
     </div>
@@ -543,7 +433,6 @@
         </section>
     </div>
 </div>
-
 <script src="js/script.js" type="text/javascript"></script>
 <script src="js/calendar.js"></script>
 <script src="js/hijri-date.js"></script>

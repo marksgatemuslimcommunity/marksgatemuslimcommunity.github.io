@@ -33,13 +33,16 @@ function setPrayerTimes() {
         var timings = response['data']['timings'];
 
         $('#prayer-times').html(
-            '<table class="table is-narrow is-striped">' +
+            '<table class="table is-narrow is-striped prayer-times">' +
             '<tr>' +
-            '<td>Fajr</td><td>Sunrise</td><td>Dhuhr</td><td>Asr</td><td>Maghrib</td><td>Isha</td>' +
+            '<td><strong>Fajr</strong></td><td><strong>Sunrise</strong></td><td><strong>Dhuhr</strong></td><td><strong>Asr</strong></td><td><strong>Maghrib</strong></td><td><strong>Isha</strong></td>' +
             '</tr>' +
             '<tr>' +
             '<td>' + timings['Fajr'] +'</td>' + '<td>' + timings['Sunrise'] +'</td>' + '<td>' + timings['Dhuhr'] +'</td>' + '<td>' + timings['Asr'] +'</td>' +
             '<td>' + timings['Maghrib'] +'</td>' + '<td>' + timings['Isha'] +'</td>' +
+            '</tr>' +
+            '<tr>' +
+            '<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>' +
             '</tr>' +
             '</table>'
         );
@@ -65,10 +68,10 @@ function toggleSubmenu(elem) {
     }
 }
 
-function setPopup() {
-  $('.modal').addClass('is-active');
+function setPopup(modal) {
+  $(modal).addClass('is-active');
 }
 
-function removePopup() {
-  $('.modal').removeClass('is-active');
+function removePopup(modal) {
+  $(modal).removeClass('is-active');
 }
