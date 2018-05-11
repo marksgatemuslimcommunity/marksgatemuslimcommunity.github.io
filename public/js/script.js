@@ -28,7 +28,7 @@ function setHijriDay() {
 }
 
 function setPrayerTimes() {
-    var prayerTimesUrl = 'http://api.aladhan.com/timings/1398332113?latitude=51.508515&longitude=-0.1254872&timezonestring=Europe/London&method=2';
+    var prayerTimesUrl = 'http://api.aladhan.com/timings/' + moment().format('DD-MM-YYYY') +'?latitude=51.508515&longitude=-0.1254872&timezonestring=Europe/London&method=2';
     $.getJSON(prayerTimesUrl, function (response) {
         var timings = response['data']['timings'];
 
