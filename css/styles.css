@@ -172,3 +172,16 @@ a {
   font-weight: bold;
   margin-bottom: 0.3rem;
 }
+
+.img-size {
+  width: 50%;
+  height: 50%;
+}
+
+.header-row, .month-field, .year-field {
+  background: #6d1c30 !important;
+}
+
+.selected-date {
+  background: #8bbf9c!important;
+}
