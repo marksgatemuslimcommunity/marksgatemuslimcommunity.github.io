@@ -2,3 +2,4 @@ node_modules
 bower_components
 assets/image/coursefees.zip
 assets/image/timetable.zip
+smtp-defaults.txt
