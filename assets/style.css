@@ -1,3 +1,13 @@
+.title--align {
+  text-align: right;
+  width: 100%;
+  color: #298a5a;
+}
+
+.page-content .wrapper {
+  max-width: calc(900px - (30px * 2));
+}
+
 .logo {
     width: 80%;
 }
@@ -41,7 +51,7 @@ li {
 
 
 .madrasah-icons {
-    font-size: 28px;
+    font-size: 42px;
 }
 
 .panel .col-4{
@@ -59,9 +69,20 @@ li {
     float: right;
 }
 
+h2,h3 {
+  color: #298a5a;
+}
+
 h2 {
     font-size: 2rem;
-    color: #298a5a;
+}
+
+.quick-link a strong {
+  color: #2a7ae2;
+}
+
+.quick-link a strong:visited {
+  color: #1756a9;
 }
 
 .site-footer {
