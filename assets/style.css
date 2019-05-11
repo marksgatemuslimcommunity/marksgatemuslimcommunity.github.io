@@ -64,7 +64,7 @@ li {
 }
 
 
-#date-header, #prayer-times{
+#date-header, #prayer-times, #nav--quick-link{
     clear: both;
     float: right;
 }
