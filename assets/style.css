@@ -13,12 +13,12 @@
 }
 
 a:hover, a:link {
-    text-decoration: none;
-    }
+  text-decoration: none;
+}
 
 nav a:link, nav a:active, nav a:visited {
     color:  #144e31 !important;
-    padding: 0.5rem;
+    text-transform: uppercase;
 }
 
 .post-list-heading {
