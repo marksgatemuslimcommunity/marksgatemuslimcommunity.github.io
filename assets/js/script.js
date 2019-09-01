@@ -25,7 +25,7 @@ function getCurrentTime() {
 function setHijriDay() {
     const currentTime = moment().utc().format('dddd • Do MMMM YYYY');
     const hijriDateFormat = moment().utc().format('DD-MM-YYYY');
-    const hijriApiUrl = 'https://api.aladhan.com/v1/gToH?date=' + hijriDateFormat + "&adjustment=2";
+    const hijriApiUrl = 'https://api.aladhan.com/v1/gToH?date=' + hijriDateFormat + "&adjustment=1";
 
     $.getJSON(hijriApiUrl, function (response) {
         const hijriDay = response['data']['hijri']['day'];
